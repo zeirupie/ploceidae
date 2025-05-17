@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ploceide - dev</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+</head>
+<body>
+    <header class="px-[50px] flex justify-between z-200">
+        <h1 class="font-bold text-gray-400 text-[1.5rem] py-[15px]">Ploceide-<span class="text-orange-400">Div</span></h1>
+        
+    </header>
+
+    <div class="hero-section h-[500px] px-[150px] py-[100px] max-md:p-[50px] max-md:h-[550px]">
+        <h1 class="text-[3rem] max-md:text-[2.3rem] font-bold text-gray-800" data-aos="fade-right">Discover <span class="text-orange-400">Useful Resources</span>, Create Amazing Things, and Innovate Every Day</h1>
+        <p class="text-[1.5rem] mt-[10px] text-gray-600" data-aos="fade-right">A compiled list of useful tools, templates, and websites for developers.</p>
+
+        <div class="mt-[30px] flex gap-[10px]" data-aos="fade-right">
+                <a href="./src/view/design.html" class="hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 group text-[1.3rem] text-[white] bg-blue-500 w-content p-[7px_15px] rounded-lg">View resources <i class="fas fa-arrow-right ml-[10px] flex items-center bg-[white] text-blue-500 p-[7px] rounded-[50%] group-hover:ml-[15px]"></i></a>
+        </div> 
+    </div>
+
+    <div class="flex flex-col items-center py-[50px] pb-[100px] mt-[20px]">
+        <h1 class="text-blue-700 text-[1.3rem] bg-blue-100 font-medium text-center p-[7px_25px] rounded-[25px]" data-aos="zoom-in">Navigate by Category</h1>
+        <h2 class="text-[2rem] font-bold text-gray-600 pt-[30px] px-[200px] text-center max-md:text-[2rem] max-md:p-[30px_50px]" data-aos="zoom-in">Find The <span class="text-orange-400">Perfect Resources</span> For Your Next Project By Browsing Our Category</h2>
+
+        <div class="flex mt-[40px] gap-[20px] text-gray-500 max-md:flex-col">
+            <a href="./src/view/design.html" class="bg-gray-200 h-[300px] w-[250px] rounded-[25px] border border-gray-300 hover:border-blue-500 hover:text-blue-500 cursor-pointer" data-aos="zoom-out-right">
+                <img src="/public/images/design.png" class="w-full" alt="">
+                <h1 class="font-bold text-[1.5rem] text-center">Design</h1>
+            </a>
+
+            <a href="./src/view/frontend.html" class="bg-gray-200 h-[300px] w-[250px] rounded-[25px] border border-gray-300 hover:border-blue-500 hover:text-blue-500 cursor-pointer" data-aos="zoom-out-right">
+                <img src="/public/images/frontend.svg" class="w-full" alt="">
+                <h1 class="font-bold text-[1.5rem] text-center">Frontend</h1>
+            </a>
+
+            <a href="./src/view/backend.html" class="bg-gray-200 h-[300px] w-[250px] rounded-[25px] border border-gray-300 hover:border-blue-500 hover:text-blue-500 cursor-pointer" data-aos="zoom-out-right">
+                <img src="/public/images/backend.svg" class="w-full" alt="">
+                <h1 class="font-bold text-[1.5rem] text-center">Backend</h1>
+            </a>
+        </div>
+        
+    </div>
+
+
+    <script>
+        AOS.init({once:true});
+    </script>
+</body>
+</html>

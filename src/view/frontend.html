@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ploceide - dev</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/script.js" defer></script>
+    
+</head>
+<body>
+    
+<div class="flex h-screen w-full relative">
+    <aside id="sideBar" class="relative min-md:w-[300px] w-full h-full bg-[white] shadow-[2px_0_2px_rgba(0,0,0,0.2)] z-200 max-md:hidden">
+        <span onclick="close_sidebar()" class="min-md:hidden absolute right-[30px] font-bold text-gray-400 cursor-pointer text-[1.5rem] top-[10px] hover:text-blue-500"><i class="fas fa-arrow-left min-md:hidden"></i></span>
+        <h1 class="font-bold text-gray-400 text-[1.5rem] py-[15px] text-center">Ploceide-<span class="text-orange-400">Div</span></h1>
+
+        <div class="flex flex-col items-center w-full px-[30px] font-medium text-gray-400">
+            <a href="/" class="bg-gray-100 p-[10px_20px] w-full rounded-lg hover:text-blue-500 hover:bg-blue-100 mb-[10px]">Home</a>
+
+            <div class="w-full text-gray-400 text-[1rem] px-[10px] font-medium mt-[10px]">Frontend</div>
+
+            <a href="#frameworks" class="bg-gray-100 p-[10px_20px] w-full hover:text-blue-500 hover:bg-blue-100 ">Frameworks</a>
+            <a href="#Icons" class="bg-gray-100 p-[10px_20px] w-full  hover:text-blue-500 hover:bg-blue-100 ">Icons</a>
+        </div>
+    </aside>
+
+    <div class="flex-1 bg-[aliceblue] relative overflow-y-scroll">
+        <nav class="bg-[white] h-[60px] px-[50px] sticky top-0 text-[1.3rem] max-md:text-[1rem] gap-[20px] text-gray-500 flex items-center shadow-[0_3px_3px_rgba(0,0,0,0.1)] z-190">
+            <div onclick="open_sidebar()" class="min-md:hidden flex items-center justify-between cursor-pointer text-gray-400 hover:text-blue-500 mr-[10px]"><i class="fas fa-bars text-[1.5rem]"></i></div>
+            <a href="./design.html" class="p-[5px_20px] rounded-lg bg-gray-100 hover:bg-blue-100 hover:text-blue-600">Design</a>
+            <a href="" class="p-[5px_20px] rounded-lg bg-blue-100 text-blue-500 hover:bg-blue-100 hover:text-blue-600">Frontend</a>
+            <a href="./backend.html" class="p-[5px_20px] rounded-lg bg-gray-100 hover:bg-blue-100 hover:text-blue-600">Backend</a>
+        </nav>
+
+    
+        <div class="p-[20px_50px] pb-[100px]">
+            <h1 class="font-bold text-[1.7rem] text-gray-500 border-b border-gray-300">Frameworks</h1>
+
+            <div class="bg-[white] p-[30px_30px] mt-[30px] rounded-[25px] shadow-md" >
+                <div class="font-bold text-blue-500">
+                    <h2 class="text-[1.3rem]">Tailwindcss <span class="text-gray-500 text-[1.2rem] font-[400]"> - CSS Framework</span></h2>
+
+                    <p class="break-words bg-orange-100 text-orange-500 p-[5px_20px] my-[5px] mb-[30px] mt-[10px]">CDN - https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4</p>
+                    <a href="https://tailwindcss.com/" target="_blank" class="bg-blue-500 text-[white] p-[10px_20px] rounded-lg hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 group">Tailwincss website <i class="fas fa-arrow-right bg-[white] text-blue-500 p-1 rounded-[50%] mr-[-10px] ml-[10px] group-hover:ml-[15px]"></i> </a>
+                </div>
+            </div>
+
+            <div class="bg-[white] p-[30px_30px] mt-[30px] rounded-[25px] shadow-md" >
+                <div class="font-bold text-blue-500">
+                    <h2 class="text-[1.3rem]">ReactJs <span class="text-gray-500 text-[1.2rem] font-[400]"> - JS Framework</span></h2>
+
+                    <p class="break-words bg-orange-100 text-orange-500 p-[5px_20px] my-[5px] mb-[30px] mt-[10px]">NPM - npm create vite@latest</p>
+                    <a href="https://react.dev/" target="_blank" class="bg-blue-500 text-[white] p-[10px_20px] rounded-lg hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 group">React website <i class="fas fa-arrow-right bg-[white] text-blue-500 p-1 rounded-[50%] mr-[-10px] ml-[10px] group-hover:ml-[15px]"></i> </a>
+                </div>
+            </div>
+
+
+            <h1 id="Icons" class="font-bold mt-[50px] text-[1.7rem] text-gray-500 border-b border-gray-300">Icons</h1>
+
+            <div class="bg-[white] p-[30px_30px] mt-[30px] rounded-[25px] shadow-md">
+                <div class="font-bold text-blue-500">
+                    <h2 class="text-[1.3rem]">Fontawesome <span class="text-gray-500 text-[1.2rem] font-[400]"> - Website Icon library</span></h2>
+
+                    <p class="break-words bg-orange-100 text-orange-500 p-[5px_20px] my-[5px] mb-[30px] mt-[10px]">CDN -  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css</p>
+                    <a href="https://fontawesome.com/" target="_blank" class="bg-blue-500 text-[white] p-[10px_20px] rounded-lg hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 group">Fontawesome website <i class="fas fa-arrow-right bg-[white] text-blue-500 p-1 rounded-[50%] mr-[-10px] ml-[10px] group-hover:ml-[15px]"></i> </a>
+                </div>
+            </div>
+        
+        <div class="h-[200px] w-full"></div>
+        </div>
+    </div>
+
+</div>
+   
+
+
+    <script>
+        AOS.init({once:true});
+    </script>
+</body>
+</html>

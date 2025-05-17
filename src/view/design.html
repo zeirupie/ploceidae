@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ploceide - dev</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/script.js" defer></script>
+    
+</head>
+<body>
+    
+<div class="flex h-screen w-full relative">
+    <aside id="sideBar" class="relative min-md:w-[300px] w-full h-full bg-[white] shadow-[2px_0_2px_rgba(0,0,0,0.2)] z-200 max-md:hidden">
+        <span onclick="close_sidebar()" class="min-md:hidden block absolute right-[30px] font-bold text-gray-400 cursor-pointer text-[1.5rem] top-[10px] hover:text-blue-500"><i class="fas fa-arrow-left"></i></span>
+        <h1 class="font-bold text-gray-400 text-[1.5rem] py-[15px] text-center">Ploceide-<span class="text-orange-400">Div</span></h1>
+
+        <div class="flex flex-col items-center w-full px-[30px] font-medium text-gray-400">
+            <a href="/" class="bg-gray-100 p-[10px_20px] w-full rounded-lg hover:text-blue-500 hover:bg-blue-100 mb-[10px]">Home</a>
+
+            <div class="w-full text-gray-400 text-[1rem] px-[10px] font-medium mt-[10px]">Design</div>
+
+            <a href="" class="bg-gray-100 p-[10px_20px] w-full hover:text-blue-500 hover:bg-blue-100 ">Inspiration</a>
+            <a href="" class="bg-gray-100 p-[10px_20px] w-full  hover:text-blue-500 hover:bg-blue-100 ">Images</a>
+        </div>
+    </aside>
+
+    <div class="flex-1 bg-[aliceblue] relative overflow-y-scroll">
+        <nav class="max-md:text-[1rem] bg-[white] h-[60px] px-[50px] sticky top-0 text-[1.3rem] gap-[20px] text-gray-500 flex items-center shadow-[0_3px_3px_rgba(0,0,0,0.1)] z-190">
+            <div onclick="open_sidebar()" class="min-md:hidden flex items-center justify-between cursor-pointer text-gray-400 hover:text-blue-500 mr-[10px]"><i class="fas fa-bars text-[1.5rem]"></i></div>
+            <a href="" class="p-[5px_20px] bg-blue-100 text-blue-500 rounded-lg hover:bg-blue-100 hover:text-blue-600">Design</a>
+            <a href="./frontend.html" class="p-[5px_20px] rounded-lg hover:bg-blue-100 bg-gray-100 hover:text-blue-600">Frontend</a>
+            <a href="./backend.html" class="p-[5px_20px] rounded-lg bg-gray-100 hover:bg-blue-100 hover:text-blue-600">Backend</a>
+        </nav>
+
+    
+        <div class="p-[20px_50px]">
+            <h1 class="font-bold text-[1.7rem] text-gray-500 border-b border-gray-300">Inspirations</h1>
+
+            <div class="bg-[white] p-[30px_30px] mt-[30px] rounded-[25px] shadow-md ">
+                <div class="font-bold text-blue-500">
+                    <h2 class="text-[1.3rem] mb-[25px]">Behance <span class="text-gray-500 text-[1.2rem] font-[400]"> - Inspiration From The World's Best Creative Community</span></h2>
+
+                    <a href="https://www.behance.net/" target="_blank" class="bg-blue-500 text-[white] p-[10px_20px] rounded-lg hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 group">Behance website <i class="fas fa-arrow-right bg-[white] text-blue-500 p-1 rounded-[50%] mr-[-10px] ml-[10px] group-hover:ml-[15px]"></i> </a>
+                </div>
+            </div>
+
+
+            <h1 id="Icons" class="font-bold mt-[50px] text-[1.7rem] text-gray-500 border-b border-gray-300">Images</h1>
+
+            <div class="bg-[white] p-[30px_30px] mt-[30px] rounded-[25px] shadow-md">
+                <div class="font-bold text-blue-500" >
+                    <h2 class="text-[1.3rem] mb-[25px]">Freepik <span class="text-gray-500 text-[1.2rem] font-[400]"> - Generate And Edit Images, Videos, And Audio, Plus 250M+ Stock Assets.</span></h2>
+
+                    <a href="https://www.freepik.com/" target="_blank" class="bg-blue-500 text-[white] p-[10px_20px] rounded-lg hover:bg-gradient-to-r hover:from-blue-500 hover:to-blue-300 group">Freepik website <i class="fas fa-arrow-right bg-[white] text-blue-500 p-1 rounded-[50%] mr-[-10px] ml-[10px] group-hover:ml-[15px]"></i> </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+   
+
+
+    <script>
+        AOS.init({once:true});
+    </script>
+</body>
+</html>
